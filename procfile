@@ -1,0 +1,2 @@
+release: python leadmanager/manage.py migrate
+web: python leadmanager/manage.py runserver
