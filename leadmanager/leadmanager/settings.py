@@ -25,7 +25,7 @@ SECRET_KEY = 't7g$gddxotz%5_gwrt64xf#-bjwr(bk_#10!ur9et_s-*vhqti'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.136.160.86', 'lead-manage.herokuapp.com']
+ALLOWED_HOSTS = ['3.136.160.86', 'lead-manage.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -65,7 +65,9 @@ ROOT_URLCONF = 'leadmanager.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+                os.path.join('../', 'frontend')
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -76,6 +78,10 @@ TEMPLATES = [
             ],
         },
     },
+]
+
+STATICFILES_DIRS = [
+    os.path.join('../', 'frontend/static/frontend')
 ]
 
 WSGI_APPLICATION = 'leadmanager.wsgi.application'
