@@ -1,2 +1,2 @@
 release: python leadmanager/manage.py migrate
-web: gunicorn leadmanager.wsgi --log-file -
+web: gunicorn --pythonpath leadmanager/leadmanager leadmanager.wsgi --log-file -
