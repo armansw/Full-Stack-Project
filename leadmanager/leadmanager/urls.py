@@ -6,5 +6,5 @@ urlpatterns = [
     path('', include('frontend.urls')),
     path('', include('leads.urls')),
     path('', include('accounts.urls')),
-    re_path('./../frontend/templates/frontend', TemplateView.as_view(template_name='index.html')),
+    # re_path('./../frontend/templates/frontend', TemplateView.as_view(template_name='index.html')),
 ]
