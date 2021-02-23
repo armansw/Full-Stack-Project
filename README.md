@@ -2,6 +2,8 @@
 
 ## Quick Start
 
+It is a simple web application TodoList, written on Django and React.js. The code is written the way, so it can be easily deployed on Heroku. Below you can see all the required commands to run in the terminal to run the app locally.
+
 ```bash
 # Install dependencies
 npm install
